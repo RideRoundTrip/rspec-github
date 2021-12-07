@@ -1,7 +1,7 @@
 name: Continuous Integration
 on: [pull_request, push]
 jobs:
-  reviewdog:
+  Reviewdog:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
@@ -10,20 +10,20 @@ jobs:
         with:
           ruby-version: 3.0
           bundler-cache: true
-      - name: rubocop
+      - name: Rubocop Analysis
         uses: reviewdog/action-rubocop@v1
         with:
           rubocop_version: gemfile
           github_token: ${{ secrets.github_token }}
           reporter: github-check
-  rspec:
+  RSpec:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         ruby:
           - 2.7
           - 3.0
-    name: RSpec tests ruby ${{ matrix.ruby }}
+    name: RSpec Tests on Ruby ${{ matrix.ruby }}
     steps:
       - name: Check out code
         uses: actions/checkout@v2

@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Roundtrip']
   spec.email         = ['eng@roundtriphealth.com']
 
-  spec.summary       = 'Formatter for RSpec to show errors in GitHub action annotations'
-  spec.description   = 'Formatter for RSpec to show errors in GitHub action annotations'
+  spec.summary       = 'Formatter for RSpec to show errors in GitHub Action annotations'
+  spec.description   = 'RSpec formatter for GitHub Actions'
   spec.homepage      = 'https://github.com/RideRoundtrip/rspec-github'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.7.0')
